@@ -17,6 +17,9 @@
 		34E3EF90288EC744009519F1 /* ReposListTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EF8F288EC744009519F1 /* ReposListTaskUITests.swift */; };
 		34E3EF92288EC744009519F1 /* ReposListTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EF91288EC744009519F1 /* ReposListTaskUITestsLaunchTests.swift */; };
 		34E3EF9F288EDC0F009519F1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EF9E288EDC0F009519F1 /* AppCoordinator.swift */; };
+		34E3EFA1288EE267009519F1 /* ReposListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFA0288EE267009519F1 /* ReposListCoordinator.swift */; };
+		34E3EFA3288EE45F009519F1 /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFA2288EE45F009519F1 /* ReposListViewController.swift */; };
+		34E3EFA5288EF634009519F1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFA4288EF634009519F1 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		34E3EF8F288EC744009519F1 /* ReposListTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListTaskUITests.swift; sourceTree = "<group>"; };
 		34E3EF91288EC744009519F1 /* ReposListTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34E3EF9E288EDC0F009519F1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		34E3EFA0288EE267009519F1 /* ReposListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListCoordinator.swift; sourceTree = "<group>"; };
+		34E3EFA2288EE45F009519F1 /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
+		34E3EFA4288EF634009519F1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				34E3EF79288EC744009519F1 /* LaunchScreen.storyboard */,
 				34E3EF7C288EC744009519F1 /* Info.plist */,
 				34E3EF9E288EDC0F009519F1 /* AppCoordinator.swift */,
+				34E3EFA0288EE267009519F1 /* ReposListCoordinator.swift */,
+				34E3EFA2288EE45F009519F1 /* ReposListViewController.swift */,
+				34E3EFA4288EF634009519F1 /* Colors.swift */,
 			);
 			path = ReposListTask;
 			sourceTree = "<group>";
@@ -263,6 +272,9 @@
 			files = (
 				34E3EF9F288EDC0F009519F1 /* AppCoordinator.swift in Sources */,
 				34E3EF73288EC744009519F1 /* ViewController.swift in Sources */,
+				34E3EFA3288EE45F009519F1 /* ReposListViewController.swift in Sources */,
+				34E3EFA5288EF634009519F1 /* Colors.swift in Sources */,
+				34E3EFA1288EE267009519F1 /* ReposListCoordinator.swift in Sources */,
 				34E3EF6F288EC744009519F1 /* AppDelegate.swift in Sources */,
 				34E3EF71288EC744009519F1 /* SceneDelegate.swift in Sources */,
 			);

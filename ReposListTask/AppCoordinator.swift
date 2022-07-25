@@ -27,9 +27,15 @@ final class AppCoordinator: Coordinator {
         self.window = window
     }
     
-    //We want to set our rootViewController in our window to a navigation controller
+    //We want to set our rootViewController in our window to the navigation controller
+    //we have to 
     func start() {
         let navigationController = UINavigationController()
+        
+        let reposListCoordinator = ReposListCoordinator(navigationController: navigationController)
+        childCoordinators.append(reposListCoordinator)
+        reposListCoordinator.start()
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
