@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3486D35D28901B880031A7D5 /* ReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3486D35C28901B880031A7D5 /* ReposListViewModel.swift */; };
+		3486D3602890200F0031A7D5 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3486D35F2890200F0031A7D5 /* RepoCell.swift */; };
+		3486D364289039AF0031A7D5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3486D363289039AF0031A7D5 /* UIView+Extensions.swift */; };
+		3486D366289042090031A7D5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3486D365289042090031A7D5 /* UIImageView+Extensions.swift */; };
 		34E3EF6F288EC744009519F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EF6E288EC744009519F1 /* AppDelegate.swift */; };
 		34E3EF71288EC744009519F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EF70288EC744009519F1 /* SceneDelegate.swift */; };
-		34E3EF73288EC744009519F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EF72288EC744009519F1 /* ViewController.swift */; };
 		34E3EF76288EC744009519F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E3EF74288EC744009519F1 /* Main.storyboard */; };
 		34E3EF78288EC744009519F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E3EF77288EC744009519F1 /* Assets.xcassets */; };
 		34E3EF7B288EC744009519F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E3EF79288EC744009519F1 /* LaunchScreen.storyboard */; };
@@ -20,6 +23,8 @@
 		34E3EFA1288EE267009519F1 /* ReposListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFA0288EE267009519F1 /* ReposListCoordinator.swift */; };
 		34E3EFA3288EE45F009519F1 /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFA2288EE45F009519F1 /* ReposListViewController.swift */; };
 		34E3EFA5288EF634009519F1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFA4288EF634009519F1 /* Colors.swift */; };
+		34E3EFAB288F262B009519F1 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFAA288F262B009519F1 /* RepoModel.swift */; };
+		34E3EFAE288F3B61009519F1 /* RepoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E3EFAD288F3B61009519F1 /* RepoDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3486D35C28901B880031A7D5 /* ReposListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewModel.swift; sourceTree = "<group>"; };
+		3486D35F2890200F0031A7D5 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		3486D363289039AF0031A7D5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		3486D365289042090031A7D5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		34E3EF6B288EC744009519F1 /* ReposListTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReposListTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E3EF6E288EC744009519F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E3EF70288EC744009519F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34E3EF72288EC744009519F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34E3EF75288EC744009519F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34E3EF77288EC744009519F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E3EF7A288EC744009519F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +65,8 @@
 		34E3EFA0288EE267009519F1 /* ReposListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListCoordinator.swift; sourceTree = "<group>"; };
 		34E3EFA2288EE45F009519F1 /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
 		34E3EFA4288EF634009519F1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		34E3EFAA288F262B009519F1 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		34E3EFAD288F3B61009519F1 /* RepoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3486D35B28901B440031A7D5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3486D35C28901B880031A7D5 /* ReposListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3486D35E28901FF10031A7D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34E3EF74288EC744009519F1 /* Main.storyboard */,
+				3486D35F2890200F0031A7D5 /* RepoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		34E3EF62288EC744009519F1 = {
 			isa = PBXGroup;
 			children = (
@@ -107,17 +134,18 @@
 		34E3EF6D288EC744009519F1 /* ReposListTask */ = {
 			isa = PBXGroup;
 			children = (
+				34E3EFA6288EF863009519F1 /* Extensions */,
+				34E3EFAC288F3B46009519F1 /* Services */,
+				34E3EFA9288F260B009519F1 /* Models */,
+				3486D35B28901B440031A7D5 /* ViewModels */,
+				34E3EFA7288EF874009519F1 /* Controllers */,
+				3486D35E28901FF10031A7D5 /* Views */,
+				34E3EFA8288EF880009519F1 /* Coordinators */,
 				34E3EF6E288EC744009519F1 /* AppDelegate.swift */,
 				34E3EF70288EC744009519F1 /* SceneDelegate.swift */,
-				34E3EF72288EC744009519F1 /* ViewController.swift */,
-				34E3EF74288EC744009519F1 /* Main.storyboard */,
 				34E3EF77288EC744009519F1 /* Assets.xcassets */,
 				34E3EF79288EC744009519F1 /* LaunchScreen.storyboard */,
 				34E3EF7C288EC744009519F1 /* Info.plist */,
-				34E3EF9E288EDC0F009519F1 /* AppCoordinator.swift */,
-				34E3EFA0288EE267009519F1 /* ReposListCoordinator.swift */,
-				34E3EFA2288EE45F009519F1 /* ReposListViewController.swift */,
-				34E3EFA4288EF634009519F1 /* Colors.swift */,
 			);
 			path = ReposListTask;
 			sourceTree = "<group>";
@@ -137,6 +165,49 @@
 				34E3EF91288EC744009519F1 /* ReposListTaskUITestsLaunchTests.swift */,
 			);
 			path = ReposListTaskUITests;
+			sourceTree = "<group>";
+		};
+		34E3EFA6288EF863009519F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34E3EFA4288EF634009519F1 /* Colors.swift */,
+				3486D363289039AF0031A7D5 /* UIView+Extensions.swift */,
+				3486D365289042090031A7D5 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		34E3EFA7288EF874009519F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34E3EFA2288EE45F009519F1 /* ReposListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		34E3EFA8288EF880009519F1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				34E3EF9E288EDC0F009519F1 /* AppCoordinator.swift */,
+				34E3EFA0288EE267009519F1 /* ReposListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		34E3EFA9288F260B009519F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34E3EFAA288F262B009519F1 /* RepoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34E3EFAC288F3B46009519F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				34E3EFAD288F3B61009519F1 /* RepoDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,12 +342,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				34E3EF9F288EDC0F009519F1 /* AppCoordinator.swift in Sources */,
-				34E3EF73288EC744009519F1 /* ViewController.swift in Sources */,
+				34E3EFAE288F3B61009519F1 /* RepoDataService.swift in Sources */,
+				34E3EFAB288F262B009519F1 /* RepoModel.swift in Sources */,
 				34E3EFA3288EE45F009519F1 /* ReposListViewController.swift in Sources */,
 				34E3EFA5288EF634009519F1 /* Colors.swift in Sources */,
+				3486D3602890200F0031A7D5 /* RepoCell.swift in Sources */,
+				3486D366289042090031A7D5 /* UIImageView+Extensions.swift in Sources */,
+				3486D35D28901B880031A7D5 /* ReposListViewModel.swift in Sources */,
 				34E3EFA1288EE267009519F1 /* ReposListCoordinator.swift in Sources */,
 				34E3EF6F288EC744009519F1 /* AppDelegate.swift in Sources */,
 				34E3EF71288EC744009519F1 /* SceneDelegate.swift in Sources */,
+				3486D364289039AF0031A7D5 /* UIView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
