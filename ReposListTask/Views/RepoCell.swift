@@ -15,9 +15,9 @@ import UIKit
 
 final class RepoCell: UITableViewCell{
     private let repoName = UILabel()
-//    private let ownerName = UILabel()
-//    private let image = UIImageView()
-//    private let creationDate = UILabel()
+    private let ownerName = UILabel()
+    private let image = UIImageView()
+    private let creationDate = UILabel()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -38,10 +38,10 @@ final class RepoCell: UITableViewCell{
         repoName.font = .systemFont(ofSize: 28, weight: .bold)
         repoName.textColor = .red
         
-//        [ownerName, creationDate].forEach {
-//            $0.font = .systemFont(ofSize: 22, weight: .medium)
-//            $0.textColor = .white
-//        }
+        [ownerName, creationDate].forEach {
+            $0.font = .systemFont(ofSize: 22, weight: .medium)
+            $0.textColor = .white
+        }
     }
     
     private func setupHierarchy() {
@@ -49,25 +49,25 @@ final class RepoCell: UITableViewCell{
     }
     
     private func setupLayout() {
-        //image.pinToSuperViewEdges()
+        image.pinToSuperViewEdges()
         repoName.pinToSuperViewEdges([.left, .bottom], constant: 15)
-        //creationDate.pinToSuperViewEdges([.right, .bottom], constant: 15)
-        //ownerName.pinToSuperViewEdges([.top, .right], constant: 15)
+        creationDate.pinToSuperViewEdges([.right, .bottom], constant: 15)
+        ownerName.pinToSuperViewEdges([.top, .right], constant: 15)
     }
     
     func update(with allRepos: [Repo]) {
         allRepos.forEach {
             repoName.text = $0.name
-//            ownerName.text = $0.owner.name
-//            guard let url = URL(string: $0.owner.avatarURL) else { return }
-//            DispatchQueue.global().async { [weak self] in
-//                if let data = try? Data(contentsOf: url) {
-//                    DispatchQueue.main.async {
-//                        self?.image.image = UIImage(data: data)
-//    
-//                    }
-//                }
-//            }
+            ownerName.text = $0.owner.name
+            guard let url = URL(string: $0.owner.avatarURL) else { return }
+            DispatchQueue.global().async { [weak self] in
+                if let data = try? Data(contentsOf: url) {
+                    DispatchQueue.main.async {
+                        self?.image.image = UIImage(data: data)
+    
+                    }
+                }
+            }
         }
     }
 }

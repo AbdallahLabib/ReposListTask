@@ -2,14 +2,14 @@
 import Foundation
 
 struct Repo: Codable {
-    let name: String?
-    //let owner: Owner
-    //let htmlURL: String
+    let name: String
+    let owner: Owner
+    let htmlURL: String
     
-//    enum CodingKeys: String, CodingKey {
-//        case name//, owner
-//        //case htmlURL = "html_url"
-//    }
+    enum CodingKeys: String, CodingKey {
+        case name, owner
+        case htmlURL = "html_url"
+    }
 }
 
 struct Owner: Identifiable, Codable {

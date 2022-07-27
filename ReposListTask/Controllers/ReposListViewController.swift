@@ -37,7 +37,7 @@ class ReposListViewController: UIViewController {
 
 extension ReposListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 //vm.numberOfRows()
+        return vm.numberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
